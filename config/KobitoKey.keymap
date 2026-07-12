@@ -38,20 +38,20 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W     &kp E      &kp R         &kp T        &kp Y        &kp U        &kp I          &kp O      &kp P
-&kp A      &kp S     &kp D      &kp F         &kp G        &kp H        &kp J        &kp K          &kp L      &kp SEMI
-&kp Z      &kp X     &kp C      &kp V         &kp B        &kp N        &kp M        &kp COMMA      &kp DOT    &kp COLON
-&kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_WIN  &lt 2 SPACE  &lt 1 ENTER  &lt 1 ENTER  &kp BACKSPACE  &kp SLASH  &mt LALT BACKSLASH
+&kp Q      &kp W     &kp E      &kp R         &kp T        &kp Y        &kp U          &kp I         &kp O      &kp P
+&kp A      &kp S     &kp D      &kp F         &kp G        &kp H        &kp J          &kp K         &kp L      &kp SEMI
+&kp Z      &kp X     &kp C      &kp V         &kp B        &kp N        &kp M          &kp COMMA     &kp DOT    &kp COLON
+&kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_WIN  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &lt 4 C_NEXT  &kp SLASH  &mt RIGHT_ALT BACKSLASH
             >;
         };
 
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N0     &kp N1  &kp N2  &kp N3     &trans  &kp MINUS  &kp N7  &kp N8  &kp N9  &trans
-&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &trans
-&trans     &kp N7  &kp N8  &kp N9     &trans  &kp ASTRK  &kp N1  &kp N2  &kp N3  &trans
-&trans     &trans  &trans  &kp LSHFT  &trans  &trans     &trans  &trans  &kp N0  &trans
+&kp N0     &kp N1  &kp N2  &kp N3     &trans  &kp EQUAL   &kp N7  &kp N8  &kp N9  &kp SLASH
+&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans  &trans      &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&trans     &kp N7  &kp N8  &kp N9     &trans  &kp PERIOD  &kp N1  &kp N2  &kp N3  &kp MINUS
+&trans     &trans  &trans  &kp LSHFT  &trans  &trans      &trans  &trans  &kp N0  &kp PLUS
             >;
         };
 
@@ -72,6 +72,15 @@
 &trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans  &trans    &trans    &to 0     &kp RALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

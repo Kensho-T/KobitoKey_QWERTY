@@ -33,6 +33,43 @@
         };
     };
 
+    macros {
+        PARENTHESES: PARENTHESES {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            label = "PARENTHESES";
+        };
+
+        BRACKET: BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            label = "BRACKET";
+        };
+
+        BRACE: BRACE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "BRACE";
+        };
+
+        DUBLEQUOTES: DUBLE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
+            label = "DUBLE";
+        };
+
+        SINGLEQUATES: SINGLEQUATES {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE>;
+            label = "SINGLEQUATES";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,10 +114,10 @@
 
         layer_4 {
             bindings = <
-&kp LBKT  &kp RBKT  &kp BSLH  &kp DOUBLE_QUOTES  &kp PIPE  &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &trans    &kp UNDER          &trans    &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &trans    &trans             &trans    &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &trans    &trans             &trans    &trans  &trans  &trans  &trans  &trans
+&kp LBKT      &kp RBKT  &kp BSLH  &kp DOUBLE_QUOTES  &kp PIPE       &trans  &trans  &trans  &trans  &trans
+&trans        &trans    &trans    &kp UNDER          &trans         &trans  &trans  &trans  &trans  &trans
+&PARENTHESES  &BRACKET  &BRACE    &DUBLEQUOTES       &SINGLEQUATES  &trans  &trans  &trans  &trans  &trans
+&trans        &trans    &trans    &trans             &trans         &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
